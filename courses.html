@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="shortcut icon" href="images/1.png" />
+    <script src="components/sidebar.js" type="text/javascript" defer></script>
+    <script src="components/topnav.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div class="container-scroller">
+        <topnav-component></topnav-component>
+        <div class="container-fluid page-body-wrapper">
+            <sidebar-component data-page="courses"></sidebar-component>
+            <div class="course-main">
+                <div class="mb-3 mt-2">
+                    <h4 class="m-0" style="font-weight: 650;">Course</h4>
+                </div>
+                <div class="row coaches-dropdown align-items-end m-0 "
+                    style="row-gap:15px;justify-content: space-between;">
+                    <div class="pl-0">
+                        <h6 class="text-gray package-count" style="font-size: 14px;">Total Courses :
+                            <span>5</span>
+                        </h6>
+                        <h6 class="text-gray package-count" style="font-size: 14px;">Packages :
+                            <span>2</span>
+                        </h6>
+                        <h6 class="text-gray package-count" style="font-size: 14px;">Assigned Courses :
+                            <span>3</span>
+                        </h6>
+                        <h6 class="text-gray package-count" style="font-size: 14px;">Enrolled Students :
+                            <span>123</span>
+                        </h6>
+                    </div>
+
+                    <div class="dropdown" style="padding: 0 6px;">
+                        <button class="btn site-btn-success dropdown-btn2" type="button" id="dropdownMenuDate2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+                            style="font-size: 15px; white-space: nowrap;font-weight: 500;">
+                            <span>+</span> Create new <img src="images/arrow-down3.png"
+                                style="filter: invert(1);height: 6px;margin-top: 1px;">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="dropdownStudent">
+                            <a href="new-course.html" class="dropdown-item">Course</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#add-package">Add Package</a>
+                            <!-- <a class="dropdown-item" data-toggle="modal" data-target="#new_category">New category</a> -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="radios">
+                    <label for="all"><input name="radio" type="radio" name="" id="all" checked>All</label>
+                    <label for="active" data-toggle="modal" data-target="#active-course"><input name="radio"
+                            type="radio" name="" id="active">Active</label>
+                    <label for="not-assingned" data-toggle="modal" data-target="#not-assingned-course"><input
+                            name="radio" type="radio" name="" id="not-assingned">Not
+                        assigned</label>
+                    <label for="expired" data-toggle="modal" data-target="#expired-course"><input name="radio"
+                            type="radio" name="" id="expired">Expired</label>
+                </div>
+                <div class="package-container">
+                    <a href="course-details.html">
+                        <div class="package">
+                            <div class="package-image">
+                                <img src="images/summer-camp.jpg" alt="">
+                                <div class="status-ribbon" style="background-image: url('images/not-assigned.png');">
+                                    <h4>Not Assigned</h4>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="text">
+                                    <h4>Course title</h4>
+                                </div>
+                                <div class="course-details">
+                                    <h4><span>Duration: </span>1 Year</h4>
+                                    <span>|</span>
+                                    <h4><span>Batches: </span>3</h4>
+                                </div>
+                                <div class="ribbon">
+                                    <h4>$200</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="package">
+                        <div class="package-image">
+                            <img src="images/summer-camp.jpg" alt="">
+                            <div class="status-ribbon" style="background-image: url('images/active.png');">
+                                <h4>Active</h4>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="text">
+                                <h4>Course title</h4>
+                            </div>
+                            <div class="course-details">
+                                <h4><span>Duration: </span>6 months</h4>
+                                <span>|</span>
+                                <h4><span>Batches: </span>3</h4>
+                            </div>
+                            <div class="ribbon">
+                                <h4>$150</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div class="package-image">
+                            <img src="images/summer-camp.jpg" alt="">
+                            <div class="status-ribbon" style="background-image: url('images/expired.png');">
+                                <h4>Expired</h4>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="text">
+                                <h4>Course title</h4>
+                            </div>
+                            <div class="course-details">
+                                <h4><span>Duration: </span>3 months</h4>
+                                <span>|</span>
+                                <h4><span>Batches: </span>3</h4>
+                            </div>
+                            <div class="ribbon">
+                                <h4>$120</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div class="package-image">
+                            <img src="images/summer-camp.jpg" alt="">
+                            <div class="status-ribbon" style="background-image: url('images/active.png');">
+                                <h4>Active</h4>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="text">
+                                <h4>Course title</h4>
+                            </div>
+                            <div class="course-details">
+                                <h4><span>Duration: </span>3 months</h4>
+                                <span>|</span>
+                                <h4><span>Batches: </span>3</h4>
+                            </div>
+                            <div class="ribbon">
+                                <h4>$120</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div class="package-image">
+                            <img src="images/summer-camp.jpg" alt="">
+                            <div class="status-ribbon" style="background-image: url('images/expired.png');">
+                                <h4>Expired</h4>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="text">
+                                <h4>Course title</h4>
+                            </div>
+                            <div class="course-details">
+                                <h4><span>Duration: </span>6 months</h4>
+                                <span>|</span>
+                                <h4><span>Batches: </span>3</h4>
+                            </div>
+                            <div class="ribbon">
+                                <h4>$150</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-heading">
+                    <h4>Packages</h4>
+                </div>
+                <a href="package-details.html">
+                    <div class="package-container">
+                        <div class="package">
+                            <div class="package-image">
+                                <img src="images/summer-camp.jpg" alt="">
+                                <div class="status-ribbon" style="background-image: url('images/active.png');">
+                                    <h4>Active</h4>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="text">
+                                    <h4>Summer Package</h4>
+                                </div>
+                                <div class="course-details">
+                                    <h4><span>Courses: </span>3</h4>
+
+                                </div>
+                                <div class="ribbon">
+                                    <h4 class="cross">
+                                        $200
+                                    </h4>
+                                    <h4>$150</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade " id="active-course">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+
+                    <h5 class="modal-title" id="coachModalLabel">Ground Booking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="max-height: calc(100vh - 180px); overflow: auto;">
+                    <div class="col-12">
+                        <h4 class="status-color-heading">Cricket-lane 2 | Indoor</h4>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <h4 class="subheading">Booking type</h4>
+                    </div>
+                    <ul class="nav nav-pills side-tab-pills mt-2" id="pills-tab" role="tablist" style="width:auto;">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="general-booking-tab" data-toggle="pill"
+                                href="#general-booking" role="tab" aria-controls="general-booking" aria-selected="true">
+                                <label for="general-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="general-booking-radio" checked>
+                                    General booking
+                                </label>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="public-booking-tab" data-toggle="pill" href="#public-booking"
+                                role="tab" aria-controls="public-booking" aria-selected="true">
+                                <label for="public-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="public-booking-radio">
+                                    Public booking
+                                </label>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="actionzone-booking-tab" data-toggle="pill"
+                                href="#actionzone-booking" role="tab" aria-controls="actionzone-booking"
+                                aria-selected="true">
+                                <label for="actionzon-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="actionzon-booking-radio">
+                                    Actionzon booking
+                                </label></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content w-100" id="pills-tabContent">
+
+                        <div class="tab-pane fade  show active" id="general-booking" role="tabpanel"
+                            aria-labelledby="general-booking-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="public-booking" role="tabpanel"
+                            aria-labelledby="public-booking-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;border-bottom: 1px solid #ddd;padding-bottom: 30px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 heading">Contact info
+                                </h6>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Name
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="textInput"
+                                    placeholder="Enter booking name">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Email ID
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="emailInput"
+                                    placeholder="Enter email id">
+                            </div>
+                            <div class="col-12 mt-4" style="border-bottom: 1px solid #ddd;padding-bottom: 40px;">
+                                <h6 class="mb-2 ">Phone number
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="numberInput"
+                                    placeholder="Enter phone number">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 heading">Payment
+                                </h6>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 heading" style="font-size: 17px;">Payment type
+                                    </h6>
+                                    <select class="hwzthat-input w-100 mt-2" name="" aria-placeholder="Weekly">
+                                        <option value="Cash">Cash</option>
+                                        <option value="Net banking">Net banking</option>
+                                        <option value="Credit card">Credit card</option>
+                                    </select>
+                                    <div class="col-12 mt-3">
+                                        <h3 class="batch-subheading"
+                                            style="font-size: 13px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add more</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mt-4">
+                                    <div class="payment-summary">
+                                        <h6 class="heading" style="font-size: 17px;padding: 20px;">Summary
+                                        </h6>
+                                        <hr>
+                                        <h4 class="payment-summary-head">13 Monday,2024</h4>
+                                        <span class="payment-summary-item">
+                                            <h4>7 am - 8 am</h4>
+                                            <h5>$20</h5>
+                                        </span>
+                                        <span class="payment-summary-item">
+                                            <h4>Discount</h4>
+                                            <h5>$5</h5>
+                                        </span>
+                                        <hr style="margin: 0px 20px 0px 20px;">
+                                        <h6 class="heading"
+                                            style="font-size: 17px;padding: 20px;display: flex;justify-content: space-between;">
+                                            Total <span>$15</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <hr>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="actionzone-booking" role="tabpanel"
+                            aria-labelledby="actionzone-booking-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;border-bottom: 1px solid #ddd;padding-bottom: 30px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Enter title
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="textInput" placeholder="Enter title">
+                            </div>
+
+                            <div class="col-12 row d-flex align-items-top">
+                                <div class="col-6 mt-4" style="padding-right: 0;">
+                                    <div class="action-zone-add-student-head">
+                                        <h4 style="font-size: 16px;">Player</h4>
+                                        <h3 style="font-size: 16px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add more</h3>
+                                    </div>
+                                    <div class="action-zone-add-student-body">
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Alice Smith</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>John Doe</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Emily Johnson</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>David Brown</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Sarah Wilson</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-4" style="padding-left: 0;">
+                                    <div class="action-zone-add-coach-head">
+                                        <h4 style="font-size: 16px;">Coach</h4>
+                                        <h3 style="font-size: 16px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add coach</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4 p-3"
+                        style="gap:10px;gap: 10px;justify-content: flex-end;border-top: 1px solid #39248726;">
+                        <button class="site-btn-outline-info hoverbtn px-5" data-dismiss="modal"
+                            aria-label="Close">Cancel</button>
+                        <button class="site-btn-success hoverbtn px-5 disabled"
+                            style="background-color: #4165ff;border-color: #4165ff;">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="not-assingned-course">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+
+                    <h5 class="modal-title" id="coachModalLabel">Ground Booking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="max-height: calc(100vh - 180px); overflow: auto;">
+                    <div class="col-12">
+                        <h4 class="status-color-heading">Cricket-lane 2 | Indoor</h4>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <h4 class="subheading">Booking type</h4>
+                    </div>
+                    <ul class="nav nav-pills side-tab-pills mt-2" id="pills-tab" role="tablist" style="width:auto;">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="general-booking-2-tab" data-toggle="pill"
+                                href="#general-booking-2" role="tab" aria-controls="general-booking-2"
+                                aria-selected="true">
+                                <label for="general-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="general-booking-radio" checked>
+                                    General booking
+                                </label>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="public-booking-2-tab" data-toggle="pill" href="#public-booking-2"
+                                role="tab" aria-controls="public-booking-2" aria-selected="true">
+                                <label for="public-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="public-booking-radio">
+                                    Public booking
+                                </label>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="actionzone-booking-2-tab" data-toggle="pill"
+                                href="#actionzone-booking-2" role="tab" aria-controls="actionzone-booking-2"
+                                aria-selected="true">
+                                <label for="actionzon-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="actionzon-booking-radio">
+                                    Actionzon booking
+                                </label></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content w-100" id="pills-tabContent">
+
+                        <div class="tab-pane fade  show active" id="general-booking-2" role="tabpanel"
+                            aria-labelledby="general-booking-2-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="public-booking-2" role="tabpanel"
+                            aria-labelledby="public-booking-2-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;border-bottom: 1px solid #ddd;padding-bottom: 30px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 heading">Contact info
+                                </h6>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Name
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="textInput"
+                                    placeholder="Enter booking name">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Email ID
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="emailInput"
+                                    placeholder="Enter email id">
+                            </div>
+                            <div class="col-12 mt-4" style="border-bottom: 1px solid #ddd;padding-bottom: 40px;">
+                                <h6 class="mb-2 ">Phone number
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="numberInput"
+                                    placeholder="Enter phone number">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 heading">Payment
+                                </h6>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 heading" style="font-size: 17px;">Payment type
+                                    </h6>
+                                    <select class="hwzthat-input w-100 mt-2" name="" aria-placeholder="Weekly">
+                                        <option value="Cash">Cash</option>
+                                        <option value="Net banking">Net banking</option>
+                                        <option value="Credit card">Credit card</option>
+                                    </select>
+                                    <div class="col-12 mt-3">
+                                        <h3 class="batch-subheading"
+                                            style="font-size: 13px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add more</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mt-4">
+                                    <div class="payment-summary">
+                                        <h6 class="heading" style="font-size: 17px;padding: 20px;">Summary
+                                        </h6>
+                                        <hr>
+                                        <h4 class="payment-summary-head">13 Monday,2024</h4>
+                                        <span class="payment-summary-item">
+                                            <h4>7 am - 8 am</h4>
+                                            <h5>$20</h5>
+                                        </span>
+                                        <span class="payment-summary-item">
+                                            <h4>Discount</h4>
+                                            <h5>$5</h5>
+                                        </span>
+                                        <hr style="margin: 0px 20px 0px 20px;">
+                                        <h6 class="heading"
+                                            style="font-size: 17px;padding: 20px;display: flex;justify-content: space-between;">
+                                            Total <span>$15</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <hr>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="actionzone-booking-2" role="tabpanel"
+                            aria-labelledby="actionzone-booking-2-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;border-bottom: 1px solid #ddd;padding-bottom: 30px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Enter title
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="textInput" placeholder="Enter title">
+                            </div>
+
+                            <div class="col-12 row d-flex align-items-top">
+                                <div class="col-6 mt-4" style="padding-right: 0;">
+                                    <div class="action-zone-add-student-head">
+                                        <h4 style="font-size: 16px;">Player</h4>
+                                        <h3 style="font-size: 16px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add more</h3>
+                                    </div>
+                                    <div class="action-zone-add-student-body">
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Alice Smith</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>John Doe</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Emily Johnson</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>David Brown</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Sarah Wilson</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-4" style="padding-left: 0;">
+                                    <div class="action-zone-add-coach-head">
+                                        <h4 style="font-size: 16px;">Coach</h4>
+                                        <h3 style="font-size: 16px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add coach</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4 p-3"
+                        style="gap:10px;gap: 10px;justify-content: flex-end;border-top: 1px solid #39248726;">
+                        <button class="site-btn-outline-info hoverbtn px-5" data-dismiss="modal"
+                            aria-label="Close">Cancel</button>
+                        <button class="site-btn-success hoverbtn px-5 disabled"
+                            style="background-color: #4165ff;border-color: #4165ff;">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="expired-course">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+
+                    <h5 class="modal-title" id="coachModalLabel">Ground Booking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="max-height: calc(100vh - 180px); overflow: auto;">
+                    <div class="col-12">
+                        <h4 class="status-color-heading">Cricket-lane 2 | Indoor</h4>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <h4 class="subheading">Booking type</h4>
+                    </div>
+                    <ul class="nav nav-pills side-tab-pills mt-2" id="pills-tab" role="tablist" style="width:auto;">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="general-booking-3-tab" data-toggle="pill"
+                                href="#general-booking-3" role="tab" aria-controls="general-booking-3"
+                                aria-selected="true">
+                                <label for="general-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="general-booking-radio" checked>
+                                    General booking
+                                </label>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="public-booking-3-tab" data-toggle="pill" href="#public-booking-3"
+                                role="tab" aria-controls="public-booking-3" aria-selected="true">
+                                <label for="public-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="public-booking-radio">
+                                    Public booking
+                                </label>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="actionzone-booking-3-tab" data-toggle="pill"
+                                href="#actionzone-booking-3" role="tab" aria-controls="actionzone-booking-3"
+                                aria-selected="true">
+                                <label for="actionzon-booking-radio">
+                                    <input name="booking" type="radio" name="radio" id="actionzon-booking-radio">
+                                    Actionzon booking
+                                </label></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content w-100" id="pills-tabContent">
+
+                        <div class="tab-pane fade  show active" id="general-booking-3" role="tabpanel"
+                            aria-labelledby="general-booking-3-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="public-booking-3" role="tabpanel"
+                            aria-labelledby="public-booking-3-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;border-bottom: 1px solid #ddd;padding-bottom: 30px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 heading">Contact info
+                                </h6>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Name
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="textInput"
+                                    placeholder="Enter booking name">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Email ID
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="emailInput"
+                                    placeholder="Enter email id">
+                            </div>
+                            <div class="col-12 mt-4" style="border-bottom: 1px solid #ddd;padding-bottom: 40px;">
+                                <h6 class="mb-2 ">Phone number
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="numberInput"
+                                    placeholder="Enter phone number">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 heading">Payment
+                                </h6>
+                            </div>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 heading" style="font-size: 17px;">Payment type
+                                    </h6>
+                                    <select class="hwzthat-input w-100 mt-2" name="" aria-placeholder="Weekly">
+                                        <option value="Cash">Cash</option>
+                                        <option value="Net banking">Net banking</option>
+                                        <option value="Credit card">Credit card</option>
+                                    </select>
+                                    <div class="col-12 mt-3">
+                                        <h3 class="batch-subheading"
+                                            style="font-size: 13px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add more</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mt-4">
+                                    <div class="payment-summary">
+                                        <h6 class="heading" style="font-size: 17px;padding: 20px;">Summary
+                                        </h6>
+                                        <hr>
+                                        <h4 class="payment-summary-head">13 Monday,2024</h4>
+                                        <span class="payment-summary-item">
+                                            <h4>7 am - 8 am</h4>
+                                            <h5>$20</h5>
+                                        </span>
+                                        <span class="payment-summary-item">
+                                            <h4>Discount</h4>
+                                            <h5>$5</h5>
+                                        </span>
+                                        <hr style="margin: 0px 20px 0px 20px;">
+                                        <h6 class="heading"
+                                            style="font-size: 17px;padding: 20px;display: flex;justify-content: space-between;">
+                                            Total <span>$15</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <hr>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="actionzone-booking-3" role="tabpanel"
+                            aria-labelledby="actionzone-booking-3-tab">
+                            <div class="row">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End date
+                                    </h6>
+                                    <input type="date" class="hwzthat-input w-100" id="dateInput">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">Start time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="15:00">
+                                </div>
+                                <div class="col-6 mt-4">
+                                    <h6 class="mb-2 ">End time
+                                    </h6>
+                                    <input type="time" class="hwzthat-input w-100" id="timeInput" value="16:00">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5"
+                                style="padding-left: 0;padding-right: 0; display: flex;flex-direction: row; align-items: center;gap:10px;border-bottom: 1px solid #ddd;padding-bottom: 30px;">
+                                <h6 class="heading-icon subhead-bold"> <img src="images/repeat.png" alt="">Repeat</h6>
+                                <label class="switch">
+                                    <input type="checkbox" role="switch">
+                                    <span class="switch-slider"></span>
+                                </label>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <h6 class="mb-2 ">Enter title
+                                </h6>
+                                <input type="text" class="hwzthat-input w-100" id="textInput" placeholder="Enter title">
+                            </div>
+
+                            <div class="col-12 row d-flex align-items-top">
+                                <div class="col-6 mt-4" style="padding-right: 0;">
+                                    <div class="action-zone-add-student-head">
+                                        <h4 style="font-size: 16px;">Player</h4>
+                                        <h3 style="font-size: 16px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add more</h3>
+                                    </div>
+                                    <div class="action-zone-add-student-body">
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Alice Smith</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>John Doe</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Emily Johnson</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>David Brown</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                        <div class="list">
+                                            <div class="person">
+                                                <img src="images/coach-dp.png" alt="">
+                                                <h4>Sarah Wilson</h4>
+                                            </div>
+                                            <img class="delete" src="images/delete-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-4" style="padding-left: 0;">
+                                    <div class="action-zone-add-coach-head">
+                                        <h4 style="font-size: 16px;">Coach</h4>
+                                        <h3 style="font-size: 16px;font-weight: 500;color:#392487"><span
+                                                style="color: #392487;">+</span>Add coach</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <h6 class="mb-2">Note</h6>
+                                <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"
+                                    placeholder="Enter your note"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mt-4 p-3"
+                        style="gap:10px;gap: 10px;justify-content: flex-end;border-top: 1px solid #39248726;">
+                        <button class="site-btn-outline-info hoverbtn px-5" data-dismiss="modal"
+                            aria-label="Close">Cancel</button>
+                        <button class="site-btn-success hoverbtn px-5 disabled"
+                            style="background-color: #4165ff;border-color: #4165ff;">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade " id="new_coach">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+
+                    <h5 class="modal-title" id="coachModalLabel">New Coach</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="max-height: calc(100vh - 180px); overflow: auto;">
+
+                    <div class="accordion">Personal information</div>
+                    <div class="row panel" style="row-gap:20px">
+                        <div class="col-12 mb-3">
+                            <h5 class="text-center pb-1">Profile Photo</h5>
+                            <div class="profile-dp mx-auto" style="border: 1px dashed #0000004A; width:90px; height:90px; border-radius: 50%; display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;">
+                                <img src="images/download.png">
+                                <h5 class="text-success m-0">Upload</h5>
+                                <input type="file" name="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">First name</h6>
+                            <input type="" placeholder="Enter coach name" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Last name</h6>
+                            <input type="" placeholder="Enter Last name" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Date of birth</h6>
+                            <input type="date" class="hwzthat-input2 w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Gender</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Email ID</h6>
+                            <input type="email" placeholder="Enter email id" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Contact number</h6>
+                            <input type="" placeholder="Enter contact number" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Emergency Contact Number</h6>
+                            <input type="" placeholder="Enter Emergency Contact Number" name=""
+                                class="hwzthat-input w-100">
+                        </div>
+
+                    </div>
+                    <div class="accordion">Address</div>
+
+                    <div class="row panel" style="row-gap:20px">
+
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Street Address</h6>
+                            <input type="" placeholder="Enter street address" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2">Apartment, Suite, or Unit Number </h6>
+                            <input type="" placeholder="Enter Apartment, Suite, or Unit Number" name=""
+                                class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">City</h6>
+                            <input type="" placeholder="Enter city" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">State/Province</h6>
+                            <input type="" placeholder="Enter State/Province" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Postal Code/Zip Code</h6>
+                            <input type="" placeholder="Enter Postal Code/Zip Code" name="" class="hwzthat-input w-100">
+                        </div>
+
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Country</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>select country</option>
+                                    <option>India</option>
+                                    <option>Australia</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="accordion">Category</div>
+
+                    <div class="row panel" style="row-gap:20px">
+
+
+                        <div class="col-12">
+                            <h6 class="mb-2 required">Add to category</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>Select category</option>
+                                    <option>category1</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="accordion">Cricket information</div>
+
+                    <div class="row panel" style="row-gap:20px">
+
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Coaching certifications</h6>
+                            <input type="" placeholder="Enter Coaching certifications" name=""
+                                class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Batting style</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>Right hand</option>
+                                    <option>Left hand</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Bowling style</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>Spin</option>
+                                    <option>Fast</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Cricinfo link</h6>
+                            <input type="" placeholder="Enter Coaching certifications" name=""
+                                class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Teams played</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Primary Language(s) used for coaching</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>English</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Additional language</h6>
+                            <input type="" placeholder="English" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Preferred category to train</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>Beginner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 required">Coaching specialization</h6>
+                            <div class="">
+                                <select class="classic">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <h6 class="mb-2 required">Tell us about yourself</h6>
+                            <textarea type="" name="" class="hwzthat-input w-100" style="min-height: 100px;"></textarea>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="d-flex align-items-center mt-3 p-3" style="gap:10px;gap: 10px;justify-content: flex-end;">
+                    <button class="site-btn-outline-info hoverbtn px-5" data-dismiss="modal"
+                        aria-label="Close">Cancel</button>
+                    <button class="site-btn-success hoverbtn px-5 disabled">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="add-package">
+        <div class="modal-dialog modal-md" role="document" style="max-width: 840px;">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+
+                    <h5 class="modal-title" id="coachModalLabel">Add Package</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="max-height: calc(100vh - 180px); overflow: auto;">
+                    <div class="row" style="row-gap:20px">
+                        <div class="col-12">
+                            <h6 class="mb-2 ">Package name</h6>
+                            <input type="text" placeholder="Enter package name" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-12">
+                            <h6 class="mb-2 ">Please select which courses you want to add to this package.</h6>
+                            <select class="hwzthat-input w-100" name="">
+                                <option value="Course title">Course title</option>
+                                <option value="Course title">Course title</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 ">Package fee</h6>
+                            <input type="number" placeholder="Enter package fee" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-6">
+                            <h6 class="mb-2 ">Package discount</h6>
+                            <input type="number" placeholder="Enter package discount % or discount amount" name=""
+                                class="hwzthat-input w-100">
+                        </div>
+                        <div class="col-12" style="border-bottom: 1px solid #ddd;">
+                            <h3 class="batch-subheading" style="font-size: 13px;font-weight: 500;color:#392487">
+                                <span style="color: #392487;">+</span>Add new discount
+                            </h3>
+                        </div>
+                        <div class="col-12 addons">
+                            <div class="col-12" style="padding-left: 0px;">
+                                <h3 class="batch-subheading" style="font-size: 13px;font-weight: 500;">Add ons</h3>
+                            </div>
+                            <div class="col-12" style="border-bottom: 1px solid #ddd;padding-left: 0px;flex: 0 0 60%;">
+                                <h3 class="batch-subheading" style="font-size: 13px;font-weight: 500;color:#392487">
+                                    <span style="color: #392487;">+</span>Add add ons
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-12" style="margin-top: 70px;">
+                            <h6 class="mb-2 ">Package fee</h6>
+                            <textarea class="col-12 description" placeholder="Enter description"
+                                style="border-radius: 5px;font-size: 13px;height: 120px;"></textarea>
+                        </div>
+                        <!-- <div class="col-6">
+                            <h6 class="mb-2 ">Upload image</h6>
+                            <div class="add-package-file">
+                                <img src="images/download.png" alt="">
+                                <label for="add-package-file">Upload image</label>
+                                <input id="add-package-file" type="file" placeholder="Enter Last name" name=""
+                                    class="hwzthat-input w-100" style="display: none;">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mt-4 p-3"
+                    style="gap:10px;gap: 10px;justify-content: flex-end;border-top: 1px solid #39248726;">
+                    <button class="site-btn-outline-info hoverbtn px-5" data-dismiss="modal"
+                        aria-label="Close">Cancel</button>
+                    <button class="site-btn-success hoverbtn px-5 " data-dismiss="modal" aria-label="Close"
+                        style="background-color: #4165ff;border-color: #4165ff;">Save</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade " id="new_category">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header align-items-center">
+
+                        <h5 class="modal-title" id="coachModalLabel">New category</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <h6 class="mb-2">Category name</h6>
+                            <input type="" placeholder="Enter batch name" name="" class="hwzthat-input w-100">
+                        </div>
+                        <div class="flex-align g2 py-4">
+                            <div class="flex-align2 g4">
+                                <h6 class="text-gray" style="font-size: 12px;">Total students : <span
+                                        class="font-weight-600 text-dark">150</span></h6>
+                                <h6 class="text-gray" style="font-size: 12px;">Selected : <span
+                                        class="font-weight-600 text-dark">0</span></h6>
+
+                            </div>
+                            <div class="top-search">
+                                <img src="images/search.png" class="icon1" style="right: auto; left: 15px;">
+                                <input type="" name="" class="hwzthat-input w-100 pl-5" placeholder="search students">
+                            </div>
+                        </div>
+                        <div class="row m-0" style="max-height: calc(100vh - 330px); overflow: auto;">
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category2" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category2" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category3" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category3" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category4" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category4" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category2" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category2" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category3" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category3" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category4" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category4" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category2" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category2" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category3" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category3" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category4" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category4" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category2" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category2" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category3" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category3" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-lg-4 p-1">
+                                <label for="new-category4" class="p-2 bg-white rounded d-block card-shadow border">
+                                    <div class="dp-name">
+                                        <img src="images/user3.png" class="dp-1">
+                                        <div>
+                                            <h5 class="font-weight-600 mb-1">Coach name S</h5>
+                                            <h6 class="m-0 h6">coach name 1@11gmail.com</h6>
+                                        </div>
+                                        <div class="radio-check">
+                                            <input id="new-category4" type="checkbox" name="new-category">
+                                            <span class="custom-radio"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center p-3" style="gap:10px;gap: 10px;justify-content: flex-end;">
+                        <button class="site-btn-outline-info hoverbtn px-5" data-dismiss="modal"
+                            aria-label="Close">Cancel</button>
+                        <button class="site-btn-success hoverbtn px-5 disabled">Save</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script src="js/off-canvas.js"></script>
+        <script src="js/template.js"></script>
+
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "flex") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "flex";
+                    }
+                });
+            }
+            $(document).ready(function () {
+                $('.nav-link').on('click', function () {
+                    var radioButton = $(this).find('input[type="radio"]');
+                    if (radioButton.length) {
+                        radioButton.prop('checked', true);
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>
